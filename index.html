@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>[Nama Kamu] | Web Developer Portfolio</title>
-  <meta name="description" content="Portfolio Web Developer profesional. Spesialisasi dalam pengembangan aplikasi web modern, dashboard manajemen, dan arsitektur database." />
+  <title>Wingki Sandro M. Simbolon | Web Developer Portfolio</title>
+  <meta name="description" content="Portofolio resmi Wingki Sandro Marganda Simbolon - Web Developer lulusan S1 Teknik Informatika STMIK Pontianak dengan spesialisasi Laravel, Tailwind CSS, dan CMS." />
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -39,20 +39,10 @@
     }
   </script>
   <style>
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #0f172a;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #334155;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #475569;
-    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
@@ -60,9 +50,14 @@
   <!-- ================= NAVBAR ================= -->
   <header class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="#hero" class="flex items-center gap-2 font-bold text-lg tracking-tight group">
-        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-600 to-sky-400 flex items-center justify-center text-white font-mono text-sm shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">&lt;/&gt;</span>
-        <span class="group-hover:text-brand-400 transition-colors">[Nama Kamu]</span>
+      <a href="#hero" class="flex items-center gap-2.5 font-bold text-lg tracking-tight group">
+        <img 
+          src="profil.jpg" 
+          alt="Wingki Simbolon" 
+          class="w-9 h-9 rounded-full object-cover object-top border-2 border-brand-500 shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform"
+          onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=WS&background=2563eb&color=fff&bold=true';"
+        />
+        <span class="group-hover:text-brand-400 transition-colors">Wingki Simbolon</span>
       </a>
 
       <!-- Desktop Nav -->
@@ -70,12 +65,13 @@
         <a href="#about" class="hover:text-white transition-colors">Tentang</a>
         <a href="#skills" class="hover:text-white transition-colors">Keahlian</a>
         <a href="#projects" class="hover:text-white transition-colors">Proyek</a>
+        <a href="#experience" class="hover:text-white transition-colors">Pengalaman</a>
         <a href="#contact" class="hover:text-white transition-colors">Kontak</a>
       </nav>
 
       <div class="flex items-center gap-3">
         <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 text-white text-xs sm:text-sm font-semibold transition-all shadow-lg shadow-brand-600/25">
-          <i data-lucide="mail" class="w-4 h-4"></i>
+          <i data-lucide="send" class="w-3.5 h-3.5"></i>
           <span>Hubungi Saya</span>
         </a>
       </div>
@@ -85,80 +81,88 @@
   <main class="pt-24 space-y-28">
 
     <!-- ================= HERO SECTION ================= -->
-    <section id="hero" class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
-      <!-- Glow background -->
+    <section id="hero" class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6">
       <div class="absolute -top-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-600/15 rounded-full blur-3xl pointer-events-none"></div>
 
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div class="lg:col-span-7 space-y-6">
+        <!-- Teks Perkenalan Kiri -->
+        <div class="lg:col-span-7 space-y-6 order-2 lg:order-1">
           <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Tersedia untuk Pekerjaan Full-time & Proyek Freelance</span>
+            <span>Siap Bekerja Full-Time & Kolaborasi Proyek</span>
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Halo, saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400">[Nama Kamu]</span>.
+            Wingki Sandro <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-400">Marganda Simbolon</span>
           </h1>
 
           <p class="text-lg sm:text-xl font-medium text-slate-300">
-            [Jabatan / Role Kamu, misal: Full Stack Web Developer & Backend Enthusiast]
+            Web Developer — Laravel, Tailwind CSS & Content Management System
           </p>
 
           <p class="text-slate-400 leading-relaxed text-sm sm:text-base max-w-2xl">
-            [Tulis ringkasan singkat tentang keahlianmu. Contoh: Berpengalaman membangun aplikasi web yang cepat, responsif, dan terstruktur. Fokus pada pengembangan dashboard terintegrasi, arsitektur database relasional, serta optimasi performa antarmuka pengguna.]
+            Lulusan S1 Teknik Informatika (Fokus Teknologi Web) dari STMIK Pontianak. Berpengalaman sejak 2023 dalam merancang, mengembangkan, dan mengelola berbagai website layanan bisnis serta sistem informasi berbasis framework Laravel maupun CMS.
           </p>
 
           <!-- Action Buttons -->
           <div class="flex flex-wrap items-center gap-4 pt-2">
             <a href="#projects" class="px-6 py-3 rounded-xl bg-white text-slate-950 font-semibold text-sm hover:bg-slate-200 transition-all flex items-center gap-2 shadow-lg shadow-white/10">
-              <span>Lihat Proyek Saya</span>
+              <span>Lihat Karya & Proyek</span>
               <i data-lucide="arrow-down" class="w-4 h-4"></i>
             </a>
-            <a href="https://github.com/[username-kamu]" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 font-semibold text-sm transition-all flex items-center gap-2">
+            <a href="https://github.com/wingki02" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 font-semibold text-sm transition-all flex items-center gap-2">
               <i data-lucide="github" class="w-4 h-4"></i>
-              <span>GitHub</span>
+              <span>github.com/wingki02</span>
             </a>
           </div>
 
-          <!-- Social Quick Links -->
-          <div class="flex items-center gap-6 pt-4 text-slate-400 text-sm">
+          <!-- Quick Info -->
+          <div class="flex flex-wrap items-center gap-6 pt-4 text-slate-400 text-sm">
             <div class="flex items-center gap-2">
               <i data-lucide="map-pin" class="w-4 h-4 text-brand-400"></i>
-              <span>[Kota Domisili, misal: Pontianak, Indonesia]</span>
+              <span>Jl. Jendral Urip No.18, Pontianak Kota</span>
             </div>
             <div class="flex items-center gap-2">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
-              <span>Clean Code & Scalable</span>
+              <i data-lucide="graduation-cap" class="w-4 h-4 text-emerald-400"></i>
+              <span>S1 Teknik Informatika — STMIK Pontianak</span>
             </div>
           </div>
         </div>
 
-        <!-- Hero Card / Code Mockup -->
-        <div class="lg:col-span-5">
-          <div class="rounded-2xl border border-slate-800 bg-slate-900/90 shadow-2xl p-6 font-mono text-xs sm:text-sm text-slate-300 space-y-4 relative overflow-hidden backdrop-blur">
-            <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-slate-500">
-              <div class="flex items-center gap-2">
-                <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
-                <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
-                <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+        <!-- Foto Profil & Badge Kanan -->
+        <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center">
+          <div class="relative group">
+            <!-- Efek Glow Belakang Foto -->
+            <div class="absolute -inset-2 bg-gradient-to-tr from-brand-600 via-sky-400 to-indigo-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition duration-500"></div>
+            
+            <!-- Bingkai Foto Utama -->
+            <div class="relative w-64 h-72 sm:w-72 sm:h-80 rounded-3xl overflow-hidden border-2 border-slate-800 bg-slate-900 shadow-2xl">
+              <!-- Ganti nama file di src="profil.jpg" jika nama file fotomu berbeda -->
+              <img 
+                src="profil.jpg" 
+                alt="Wingki Sandro Marganda Simbolon" 
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Wingki+Simbolon&size=512&background=1e293b&color=38bdf8&bold=true';"
+              />
+              <!-- Overlay gradasi halus di bagian bawah foto -->
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-4 left-4 right-4">
+                <p class="text-xs font-mono text-sky-400">Web Developer</p>
+                <p class="text-sm font-bold text-white truncate">Wingki Sandro M. S.</p>
               </div>
-              <span class="text-xs">developer-profile.json</span>
             </div>
-            <pre class="overflow-x-auto text-slate-300"><code>{
-  <span class="text-sky-400">"name"</span>: <span class="text-emerald-300">"[Nama Kamu]"</span>,
-  <span class="text-sky-400">"role"</span>: <span class="text-emerald-300">"Web Developer"</span>,
-  <span class="text-sky-400">"stack"</span>: [
-    <span class="text-amber-300">"PHP"</span>, <span class="text-amber-300">"Laravel"</span>, 
-    <span class="text-amber-300">"Tailwind CSS"</span>, <span class="text-amber-300">"JavaScript"</span>,
-    <span class="text-amber-300">"MySQL"</span>
-  ],
-  <span class="text-sky-400">"strengths"</span>: [
-    <span class="text-emerald-300">"Multi-user Dashboards"</span>,
-    <span class="text-emerald-300">"Responsive UI/UX"</span>,
-    <span class="text-emerald-300">"Database Architecture"</span>
-  ],
-  <span class="text-sky-400">"openForOpportunities"</span>: <span class="text-blue-400">true</span>
-}</code></pre>
+
+            <!-- Floating Badge Kiri Atas -->
+            <div class="absolute -top-4 -left-4 bg-slate-900/95 backdrop-blur border border-slate-800 px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2">
+              <i data-lucide="code-2" class="w-4 h-4 text-brand-400"></i>
+              <span class="text-xs font-semibold text-slate-200">Laravel & Tailwind</span>
+            </div>
+
+            <!-- Floating Badge Kanan Bawah -->
+            <div class="absolute -bottom-3 -right-4 bg-slate-900/95 backdrop-blur border border-slate-800 px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <span class="text-xs font-semibold text-slate-200">S1 Teknik Informatika</span>
+            </div>
           </div>
         </div>
       </div>
@@ -166,282 +170,319 @@
 
     <!-- ================= ABOUT ME ================= -->
     <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-3xl border border-slate-800 bg-slate-900/50 p-8 sm:p-12 relative overflow-hidden">
-        <div class="max-w-3xl space-y-6">
-          <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">
-            // TENTANG SAYA
+      <div class="rounded-3xl border border-slate-800 bg-slate-900/50 p-8 sm:p-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <div class="inline-flex items-center gap-2 text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">
+              // PROFIL SINGKAT
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              Perpaduan keahlian pengembangan sistem web, manajemen konten, dan pemecahan masalah teknis.
+            </h2>
+            <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+              Saya adalah lulusan S1 jurusan Teknik Informatika di <strong>STMIK Pontianak (2020–2025)</strong> dengan peminatan <strong>Teknologi Web</strong>. Saya fokus membangun aplikasi web yang bersih, responsif di perangkat mobile, dan mudah dikelola menggunakan <strong>Framework Laravel</strong>, <strong>Tailwind CSS</strong>, maupun <strong>CMS (WordPress)</strong>.
+            </p>
+            <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+              Selain pengembangan web, saya menguasai pengelolaan data menggunakan Microsoft Office (tersertifikasi keahlian Spreadsheets/Excel), serta memiliki pemahaman kuat dalam troubleshooting hardware maupun software komputer.
+            </p>
           </div>
-          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-            Membangun solusi digital yang fungsional, andal, dan ramah pengguna.
-          </h2>
-          <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
-            [Tulis deskripsi mendalam tentang dirimu di sini. Ceritakan bagaimana kamu memulai pemrograman web, pengalaman memecahkan masalah nyata, ketertarikanmu pada arsitektur sistem backend, serta bagaimana kamu memastikan antarmuka tetap bersih dan nyaman digunakan di layar smartphone maupun komputer.]
-          </p>
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4 border-t border-slate-800/80">
-            <div>
-              <p class="text-3xl font-extrabold text-white">2+</p>
-              <p class="text-xs text-slate-400 mt-1">Tahun Pengalaman Coding</p>
+          <div class="lg:col-span-4 grid grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800">
+              <p class="text-3xl font-extrabold text-brand-400">4+</p>
+              <p class="text-xs text-slate-400 mt-1">Proyek Web & Sistem</p>
             </div>
-            <div>
-              <p class="text-3xl font-extrabold text-white">100%</p>
-              <p class="text-xs text-slate-400 mt-1">Komitmen Kualitas & Keamanan</p>
+            <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800">
+              <p class="text-3xl font-extrabold text-emerald-400">2023</p>
+              <p class="text-xs text-slate-400 mt-1">Mulai Aktif sebagai Web Creator</p>
             </div>
-            <div>
-              <p class="text-3xl font-extrabold text-white">&lt;0.5s</p>
-              <p class="text-xs text-slate-400 mt-1">Target Performa & Responsif</p>
+            <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800 col-span-2">
+              <p class="text-lg font-bold text-white">STMIK Pontianak</p>
+              <p class="text-xs text-slate-400 mt-1">S1 Teknik Informatika — Fokus Teknologi Web (2020 - 2025)</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= SKILLS / TECH STACK ================= -->
+    <!-- ================= SKILLS ================= -->
     <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
       <div>
-        <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// KEAHLIAN & TEKNOLOGI</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">Tech Stack & Tools yang Dikuasai</h2>
-        <p class="text-slate-400 text-sm mt-1">Alat dan teknologi yang biasa digunakan dalam alur kerja pengembangan web sehari-hari.</p>
+        <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// KOMPETENSI TEKNIS</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">Keahlian & Teknologi</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Card 1: Backend & Database -->
+        <!-- Web Development -->
         <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 space-y-4 hover:border-slate-700 transition-colors">
           <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 text-brand-400 flex items-center justify-center">
-            <i data-lucide="server" class="w-5 h-5"></i>
+            <i data-lucide="code-2" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold text-white">Backend & Database</h3>
-          <p class="text-xs text-slate-400">Pengolahan logika bisnis, autentikasi multi-role, dan pemodelan data relasional yang aman.</p>
+          <h3 class="text-lg font-bold text-white">Web Development</h3>
+          <p class="text-xs text-slate-400">Membangun sistem backend, dashboard pengelolaan konten, serta struktur database relasional.</p>
           <div class="flex flex-wrap gap-2 pt-2">
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">PHP</span>
             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Laravel</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">MySQL / MariaDB</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">RESTful API</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">PHP</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">MySQL</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">WordPress / CMS</span>
           </div>
         </div>
 
-        <!-- Card 2: Frontend & UI Design -->
+        <!-- Frontend & Desain Web -->
         <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 space-y-4 hover:border-slate-700 transition-colors">
           <div class="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center">
             <i data-lucide="layout" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold text-white">Frontend & UI/UX</h3>
-          <p class="text-xs text-slate-400">Menerjemahkan rancangan antarmuka menjadi halaman web responsif dan interaktif di berbagai resolusi layar.</p>
+          <h3 class="text-lg font-bold text-white">Frontend & Desain Web</h3>
+          <p class="text-xs text-slate-400">Merancang tampilan website yang responsif, modern, dan nyaman diakses lewat smartphone maupun desktop.</p>
           <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">HTML5 & CSS3</span>
             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Tailwind CSS</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">JavaScript (ES6+)</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">HTML5 Semantic</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">CSS Animation</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">JavaScript</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Responsive UI</span>
           </div>
         </div>
 
-        <!-- Card 3: Deployment & Workflow -->
+        <!-- Tools, IT Support & Administrasi -->
         <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/60 space-y-4 hover:border-slate-700 transition-colors">
           <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center">
-            <i data-lucide="cpu" class="w-5 h-5"></i>
+            <i data-lucide="wrench" class="w-5 h-5"></i>
           </div>
-          <h3 class="text-lg font-bold text-white">Workflow & Deployment</h3>
-          <p class="text-xs text-slate-400">Manajemen kode sumber terstruktur, konfigurasi domain, instalasi SSL, dan deployment ke server.</p>
+          <h3 class="text-lg font-bold text-white">Tools, Infrastruktur & IT</h3>
+          <p class="text-xs text-slate-400">Deployment web, pengelolaan hosting/domain, pengolahan data Excel, dan troubleshooting perangkat komputer.</p>
           <div class="flex flex-wrap gap-2 pt-2">
             <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Git & GitHub</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Laragon / Local Dev</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Vite Build</span>
-            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Hosting / SSL</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Laragon / Vite</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Hosting & Domain</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Ms. Excel (Certified)</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300 border border-slate-700">Hardware/Software IT</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= FEATURED PROJECTS ================= -->
-    <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-        <div>
-          <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// KARYA & PROYEK</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">Proyek Terpilih</h2>
-          <p class="text-slate-400 text-sm mt-1">Beberapa aplikasi dan sistem nyata yang pernah saya bangun.</p>
-        </div>
-        <a href="https://github.com/[username-kamu]" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-brand-400 hover:text-brand-300 font-medium">
-          <span>Lihat semua di GitHub</span>
-          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-        </a>
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <div>
+        <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// PORTOFOLIO KARYA</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mt-2">Proyek Website & Sistem Informasi</h2>
+        <p class="text-slate-400 text-sm mt-1">Daftar website dan aplikasi yang pernah saya bangun serta kelola.</p>
       </div>
 
-      <div class="space-y-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        <!-- PROYEK 1: Sistem Layanan Publik / Dashboard Multi-User -->
-        <div class="rounded-3xl border border-slate-800 bg-slate-900/40 overflow-hidden grid grid-cols-1 lg:grid-cols-12 hover:border-slate-700 transition-all">
-          <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between space-y-6">
-            <div class="space-y-3">
-              <div class="flex items-center gap-3">
-                <span class="px-2.5 py-1 rounded-full bg-blue-500/10 text-brand-400 text-xs font-medium border border-blue-500/20">Aplikasi Web / Dashboard</span>
-                <span class="text-xs text-slate-500 font-mono">Proyek Utama</span>
-              </div>
-              <h3 class="text-2xl font-bold text-white tracking-tight">[Nama Proyek 1, misal: SIPADU SINGKUP - Sistem Informasi Pelayanan Terpadu]</h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                [Deskripsi Proyek: Sistem pelayanan administrasi dan pelaporan publik berbasis web. Memungkinkan masyarakat mengajukan permohonan secara mandiri serta menyediakan dashboard operasional lengkap bagi pihak instansi/pengelola.]
-              </p>
+        <!-- Proyek 1: SIPADU SINGKUP -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 sm:p-8 flex flex-col justify-between space-y-6 hover:border-slate-700 transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-blue-500/10 text-brand-400 text-xs font-semibold border border-blue-500/20">Sistem Informasi & Dashboard</span>
+              <span class="text-xs font-mono text-slate-400">Laravel & Tailwind</span>
             </div>
-
-            <div class="space-y-4">
-              <div class="space-y-2">
-                <p class="text-xs font-semibold text-slate-300 tracking-wide uppercase">Fitur & Tanggung Jawab Utama:</p>
-                <ul class="text-xs sm:text-sm text-slate-400 space-y-1.5 list-disc list-inside">
-                  <li>Membangun arsitektur backend, autentikasi multi-level role, dan database relasional.</li>
-                  <li>Mengembangkan dashboard interaktif untuk verifikasi data pengajuan dan tracking status berkas real-time.</li>
-                  <li>Antarmuka responsif dan ramah pengguna dengan waktu respon cepat di perangkat mobile.</li>
-                </ul>
-              </div>
-
-              <div class="flex flex-wrap gap-2 pt-2">
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Laravel</span>
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Tailwind CSS</span>
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">MySQL</span>
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Vite</span>
-              </div>
-
-              <div class="flex items-center gap-4 pt-3">
-                <a href="#" target="_blank" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-white px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 transition-colors">
-                  <i data-lucide="external-link" class="w-4 h-4"></i>
-                  <span>Live Demo</span>
-                </a>
-                <a href="#" target="_blank" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-300 hover:text-white px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors">
-                  <i data-lucide="github" class="w-4 h-4"></i>
-                  <span>Source Code</span>
-                </a>
-              </div>
-            </div>
+            <h3 class="text-xl font-bold text-white">SIPADU SINGKUP — Layanan Administrasi Terpadu</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Aplikasi web layanan administrasi publik terpadu untuk Kantor Camat Singkup, Kabupaten Ketapang. Dilengkapi sistem manajemen pengguna multi-role, dashboard pengelolaan berkas permohonan masyarakat, dan antarmuka responsif.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside pt-1">
+              <li>Arsitektur backend dan pemodelan database menggunakan Laravel.</li>
+              <li>Antarmuka modern dan responsif menggunakan Tailwind CSS & Vite.</li>
+              <li>Manajemen dokumen, verifikasi status layanan, dan pengelolaan pengguna.</li>
+            </ul>
           </div>
-
-          <!-- Mockup Display Right -->
-          <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-slate-950 p-6 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-slate-800">
-            <div class="w-full bg-slate-950 rounded-xl border border-slate-800 p-4 shadow-xl space-y-3 font-mono text-xs">
-              <div class="flex items-center justify-between text-slate-500 pb-2 border-b border-slate-800/80">
-                <span class="text-[11px]">preview-screen.png</span>
-                <span class="text-emerald-400">● 200 OK</span>
-              </div>
-              <div class="h-44 rounded-lg bg-slate-900 border border-dashed border-slate-800 flex flex-col items-center justify-center text-slate-500 text-center p-4">
-                <i data-lucide="layout-dashboard" class="w-8 h-8 mb-2 text-slate-600"></i>
-                <p class="text-xs">[Tempatkan screenshot dashboard proyek 1 di sini]</p>
-                <p class="text-[10px] text-slate-600 mt-1">img src="./assets/project1.png"</p>
-              </div>
-              <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-400">
-                <div class="p-2 rounded bg-slate-900 border border-slate-800">
-                  <p class="text-slate-500 text-[10px]">Database</p>
-                  <p class="font-bold text-slate-200">Relational CRUD</p>
-                </div>
-                <div class="p-2 rounded bg-slate-900 border border-slate-800">
-                  <p class="text-slate-500 text-[10px]">Performance</p>
-                  <p class="font-bold text-emerald-400">Fast Response</p>
-                </div>
-              </div>
-            </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-xs font-mono text-emerald-400 flex items-center gap-1.5">
+              <i data-lucide="layers" class="w-4 h-4"></i> Full-Stack Web App
+            </span>
+            <a href="https://github.com/wingki02" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-white hover:text-brand-400 transition-colors">
+              <span>Lihat di GitHub</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
           </div>
         </div>
 
-        <!-- PROYEK 2: Interactive Web App / Custom Landing Page -->
-        <div class="rounded-3xl border border-slate-800 bg-slate-900/40 overflow-hidden grid grid-cols-1 lg:grid-cols-12 hover:border-slate-700 transition-all">
-          <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between space-y-6">
-            <div class="space-y-3">
-              <div class="flex items-center gap-3">
-                <span class="px-2.5 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-medium border border-sky-500/20">Frontend & Interaktivitas</span>
-                <span class="text-xs text-slate-500 font-mono">Proyek Showcase</span>
-              </div>
-              <h3 class="text-2xl font-bold text-white tracking-tight">[Nama Proyek 2, misal: Interactive Web Application / Digital Invitation Showcase]</h3>
-              <p class="text-sm text-slate-400 leading-relaxed">
-                [Deskripsi Proyek: Website interaktif modern dengan fokus pada pengalaman visual yang halus, animasi scroll responsif, pemutar media ringan, dan optimasi performa gambar agar cepat dimuat di jaringan seluler.]
-              </p>
+        <!-- Proyek 2: Kaia Service -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 sm:p-8 flex flex-col justify-between space-y-6 hover:border-slate-700 transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold border border-indigo-500/20">Website Layanan Bisnis</span>
+              <span class="text-xs font-mono text-slate-400">Juli 2024 – Juli 2025</span>
             </div>
-
-            <div class="space-y-4">
-              <div class="space-y-2">
-                <p class="text-xs font-semibold text-slate-300 tracking-wide uppercase">Fitur & Tanggung Jawab Utama:</p>
-                <ul class="text-xs sm:text-sm text-slate-400 space-y-1.5 list-disc list-inside">
-                  <li>Implementasi transisi dan animasi interaktif menggunakan JavaScript dan CSS murni.</li>
-                  <li>Fitur dinamis: countdown timer, formulir RSVP real-time, dan pemutar audio otomatis.</li>
-                  <li>Desain mobile-first dengan tipografi yang nyaman dibaca di smartphone.</li>
-                </ul>
-              </div>
-
-              <div class="flex flex-wrap gap-2 pt-2">
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">JavaScript</span>
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Tailwind CSS</span>
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">CSS Animations</span>
-                <span class="px-2.5 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">HTML5 Audio</span>
-              </div>
-
-              <div class="flex items-center gap-4 pt-3">
-                <a href="#" target="_blank" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-white px-4 py-2 rounded-lg bg-brand-600 hover:bg-brand-500 transition-colors">
-                  <i data-lucide="external-link" class="w-4 h-4"></i>
-                  <span>Live Demo</span>
-                </a>
-                <a href="#" target="_blank" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-300 hover:text-white px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 transition-colors">
-                  <i data-lucide="github" class="w-4 h-4"></i>
-                  <span>Source Code</span>
-                </a>
-              </div>
-            </div>
+            <h3 class="text-xl font-bold text-white">Kaia Service (kaiaservice.biz.id)</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Membangun dan mengelola website resmi untuk layanan Kaia Service menggunakan framework Laravel. Berfokus pada penyajian informasi layanan yang terstruktur, cepat diakses dari perangkat mobile, serta kemudahan manajemen konten.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside pt-1">
+              <li>Pengembangan struktur halaman web berbasis Laravel.</li>
+              <li>Pengelolaan konten berkala, pemeliharaan sistem, dan konfigurasi domain/hosting.</li>
+              <li>Optimasi tampilan mobile agar mudah dinavigasi oleh pelanggan.</li>
+            </ul>
           </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-400">Stack: Laravel, MySQL, HTML/CSS</span>
+            <a href="https://www.kaiaservice.biz.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-400 hover:text-brand-300 transition-colors">
+              <span>kaiaservice.biz.id</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
 
-          <!-- Mockup Display Right -->
-          <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 to-slate-950 p-6 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-slate-800">
-            <div class="w-full bg-slate-950 rounded-xl border border-slate-800 p-4 shadow-xl space-y-3 font-mono text-xs">
-              <div class="flex items-center justify-between text-slate-500 pb-2 border-b border-slate-800/80">
-                <span class="text-[11px]">mobile-preview.png</span>
-                <span class="text-sky-400">Mobile First</span>
-              </div>
-              <div class="h-44 rounded-lg bg-slate-900 border border-dashed border-slate-800 flex flex-col items-center justify-center text-slate-500 text-center p-4">
-                <i data-lucide="smartphone" class="w-8 h-8 mb-2 text-slate-600"></i>
-                <p class="text-xs">[Tempatkan screenshot mobile view proyek 2 di sini]</p>
-                <p class="text-[10px] text-slate-600 mt-1">img src="./assets/project2.png"</p>
-              </div>
-              <div class="grid grid-cols-2 gap-2 text-[11px] text-slate-400">
-                <div class="p-2 rounded bg-slate-900 border border-slate-800">
-                  <p class="text-slate-500 text-[10px]">Animation</p>
-                  <p class="font-bold text-slate-200">Smooth Scroll</p>
-                </div>
-                <div class="p-2 rounded bg-slate-900 border border-slate-800">
-                  <p class="text-slate-500 text-[10px]">Media</p>
-                  <p class="font-bold text-sky-400">Optimized</p>
-                </div>
-              </div>
+        <!-- Proyek 3: Pamungkas RentCar -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 sm:p-8 flex flex-col justify-between space-y-6 hover:border-slate-700 transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-semibold border border-sky-500/20">Website Rental & Katalog</span>
+              <span class="text-xs font-mono text-slate-400">Agustus 2023 – Juli 2024</span>
             </div>
+            <h3 class="text-xl font-bold text-white">Pamungkas RentCar (pmksrent.biz.id)</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Merancang desain website dan sistem manajemen konten berbasis Laravel untuk usaha penyewaan mobil Pamungkas RentCar. Menampilkan daftar unit armada, informasi harga sewa, dan integrasi kontak pemesanan langsung.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside pt-1">
+              <li>Perancangan tata letak katalog unit kendaraan yang rapi dan responsif.</li>
+              <li>Manajemen pembaruan data unit dan konten promosi berbasis Laravel.</li>
+              <li>Integrasi alur pemesanan pelanggan yang praktis.</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-400">Stack: Laravel, Responsive Web Design</span>
+            <a href="https://www.pmksrent.biz.id" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-400 hover:text-brand-300 transition-colors">
+              <span>pmksrent.biz.id</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyek 4: Nusantara Coffee Beans -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 sm:p-8 flex flex-col justify-between space-y-6 hover:border-slate-700 transition-all">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-semibold border border-amber-500/20">Company Profile & Produk</span>
+              <span class="text-xs font-mono text-slate-400">Juni 2023 – Juni 2024</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">Nusantara Coffee Beans (nusantaracoffebeans.com)</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Merancang desain visual dan mengelola manajemen konten website Nusantara Coffee Beans menggunakan Content Management System (CMS). Menyajikan profil perusahaan dan etalase produk biji kopi secara menarik.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside pt-1">
+              <li>Kustomisasi tema, tata letak visual, dan tipografi website.</li>
+              <li>Manajemen publikasi konten produk dan optimasi gambar untuk web.</li>
+              <li>Pemeliharaan rutin performa dan ketersediaan website.</li>
+            </ul>
+          </div>
+          <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-400">Stack: CMS / WordPress, Web Design</span>
+            <a href="https://www.nusantaracoffebeans.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-400 hover:text-brand-300 transition-colors">
+              <span>nusantaracoffebeans.com</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- ================= CONTACT / CALL TO ACTION ================= -->
+    <!-- ================= EXPERIENCE & EDUCATION ================= -->
+    <section id="experience" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Riwayat Pengalaman Kerja -->
+        <div class="lg:col-span-7 space-y-6">
+          <div>
+            <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// REKAM JEJAK</span>
+            <h2 class="text-2xl font-bold text-white mt-2">Pengalaman Kerja</h2>
+          </div>
+
+          <div class="space-y-6 border-l-2 border-slate-800 pl-6 ml-2">
+            <div class="relative space-y-1">
+              <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-brand-500 border-2 border-slate-950"></span>
+              <span class="text-xs font-mono text-brand-400">Juli 2024 – Juli 2025</span>
+              <h3 class="text-base font-bold text-white">Web Creator — Kaia Service</h3>
+              <p class="text-xs text-slate-400">Membangun website menggunakan framework Laravel serta menangani manajemen konten dan pemeliharaan situs (www.kaiaservice.biz.id).</p>
+            </div>
+
+            <div class="relative space-y-1">
+              <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-700 border-2 border-slate-950"></span>
+              <span class="text-xs font-mono text-slate-400">Agustus 2023 – Juli 2024</span>
+              <h3 class="text-base font-bold text-white">Web Creator — Pamungkas RentCar</h3>
+              <p class="text-xs text-slate-400">Merancang desain website dan mengelola manajemen konten berbasis Laravel untuk layanan sewa kendaraan (www.pmksrent.biz.id).</p>
+            </div>
+
+            <div class="relative space-y-1">
+              <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-700 border-2 border-slate-950"></span>
+              <span class="text-xs font-mono text-slate-400">Juni 2023 – Juni 2024</span>
+              <h3 class="text-base font-bold text-white">Web Creator — Nusantara Coffee Beans</h3>
+              <p class="text-xs text-slate-400">Merancang desain tampilan dan menangani manajemen konten website berbasis CMS (www.nusantaracoffebeans.com).</p>
+            </div>
+
+            <div class="relative space-y-1">
+              <span class="absolute -left-[31px] top-1.5 w-3.5 h-3.5 rounded-full bg-slate-700 border-2 border-slate-950"></span>
+              <span class="text-xs font-mono text-slate-400">April 2017 – November 2017</span>
+              <h3 class="text-base font-bold text-white">Mekanik — Suzuki Daya Kharisma Ketapang</h3>
+              <p class="text-xs text-slate-400">Menangani pemeriksaan teknis, perawatan berkala, dan penyelesaian masalah mekanikal kendaraan.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Riwayat Pendidikan -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// AKADEMIK</span>
+            <h2 class="text-2xl font-bold text-white mt-2">Pendidikan & Sertifikasi</h2>
+          </div>
+
+          <div class="space-y-4">
+            <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/50 space-y-1.5">
+              <span class="text-xs font-mono text-emerald-400">2020 – 2025</span>
+              <h3 class="text-base font-bold text-white">STMIK Pontianak</h3>
+              <p class="text-xs text-slate-300 font-medium">S1 Teknik Informatika — Fokus Teknologi Web</p>
+              <p class="text-xs text-slate-400 pt-1">Mempelajari rekayasa perangkat lunak, pemrograman web berbasis framework, basis data, dan jaringan komputer.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/50 space-y-1.5">
+              <span class="text-xs font-mono text-slate-400">2017 – 2020</span>
+              <h3 class="text-base font-bold text-white">SMK Negeri 2 Ketapang</h3>
+              <p class="text-xs text-slate-400">Teknik Otomotif Kendaraan Ringan</p>
+            </div>
+
+            <div class="p-5 rounded-2xl border border-slate-800 bg-slate-900/50 space-y-1.5">
+              <span class="text-xs font-mono text-brand-400">Sertifikasi Keahlian</span>
+              <h3 class="text-base font-bold text-white">Sertifikat Keahlian Spreadsheets (Ms. Excel)</h3>
+              <p class="text-xs text-slate-400">Pengolahan data, administrasi, dan pengoperasian paket Microsoft Office.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
       <div class="rounded-3xl border border-slate-800 bg-gradient-to-b from-slate-900/90 to-slate-950 p-8 sm:p-14 text-center space-y-8 relative overflow-hidden">
-        <div class="absolute -bottom-10 left-1/2 -translate-x-1/2 w-80 h-80 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-2xl mx-auto space-y-4">
-          <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// MARI BERKOLABORASI</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Tertarik bekerja sama atau mendiskusikan peluang proyek?</h2>
-          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Saya selalu terbuka untuk berdiskusi mengenai lowongan full-time, proyek freelance, atau sekadar berbagi pandangan seputar web development.
+        <div class="max-w-2xl mx-auto space-y-3">
+          <span class="text-brand-400 font-semibold text-xs tracking-wider uppercase font-mono">// KONTAK LANGSUNG</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Mari Terhubung & Berdiskusi</h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            Berdomisili di Pontianak Kota dan siap berkontribusi penuh waktu sebagai Web Developer / Programmer. Hubungi saya melalui kontak di bawah ini:
           </p>
         </div>
 
         <div class="flex flex-wrap items-center justify-center gap-4">
-          <a href="mailto:[emailkamu@example.com]" class="px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm transition-all shadow-lg shadow-brand-600/25 flex items-center gap-2">
+          <a href="mailto:wingkisandro1102@gmail.com" class="px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm transition-all shadow-lg shadow-brand-600/25 flex items-center gap-2">
             <i data-lucide="mail" class="w-4 h-4"></i>
-            <span>[emailkamu@example.com]</span>
+            <span>wingkisandro1102@gmail.com</span>
           </a>
-          <a href="https://wa.me/[nomorwhatsappkamu]" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-all shadow-lg shadow-emerald-600/25 flex items-center gap-2">
-            <i data-lucide="message-circle" class="w-4 h-4"></i>
-            <span>WhatsApp</span>
+          <a href="https://wa.me/62895369062892" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-all shadow-lg shadow-emerald-600/25 flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            <span>+62 895-3690-62892</span>
           </a>
         </div>
 
-        <div class="pt-6 border-t border-slate-800/80 flex flex-wrap justify-center items-center gap-6 text-sm text-slate-400">
-          <a href="https://github.com/[username-kamu]" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5">
+        <div class="pt-6 border-t border-slate-800/80 flex flex-wrap justify-center items-center gap-6 text-xs sm:text-sm text-slate-400">
+          <span class="flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-4 h-4 text-slate-500"></i>
+            Jl. Jendral Urip No.18, Pontianak Kota
+          </span>
+          <a href="https://github.com/wingki02" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5">
             <i data-lucide="github" class="w-4 h-4"></i>
-            <span>GitHub</span>
-          </a>
-          <a href="https://linkedin.com/in/[username-kamu]" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5">
-            <i data-lucide="linkedin" class="w-4 h-4"></i>
-            <span>LinkedIn</span>
+            <span>github.com/wingki02</span>
           </a>
         </div>
       </div>
@@ -452,12 +493,11 @@
   <!-- ================= FOOTER ================= -->
   <footer class="border-t border-slate-800/80 py-8 bg-slate-950 text-slate-500 text-xs">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p>© 2026 [Nama Kamu]. Dibuat dengan HTML, Tailwind CSS & Lucide Icons.</p>
-      <p class="font-mono text-slate-600">Designed for GitHub Pages deployment.</p>
+      <p>© 2026 Wingki Sandro Marganda Simbolon. All rights reserved.</p>
+      <p class="font-mono text-slate-600">Built with HTML, Tailwind CSS & Lucide Icons</p>
     </div>
   </footer>
 
-  <!-- Initialize Lucide Icons -->
   <script>
     lucide.createIcons();
   </script>
